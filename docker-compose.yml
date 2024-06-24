@@ -16,7 +16,7 @@ services:
       - "dnsmasq_config:/etc/dnsmasq.d"
     dns:
       - "127.0.0.1"
-      - "1.1.1.1"
+      - "208.67.222.222"
     network_mode: host
     labels:
       io.balena.features.dbus: "1"
@@ -27,7 +27,7 @@ services:
       - /var/log/pihole
     environment:
       DNSMASQ_LISTENING: all
-      PIHOLE_DNS_: 1.1.1.1;1.0.0.1
+      PIHOLE_DNS_: 208.67.222.222;208.67.220.220
       FONTFACE: Terminus
       FONTSIZE: 8x14
       WEBPASSWORD: balena
