@@ -16,19 +16,19 @@ assets:
   repository:
     type: "blob.asset"
     data:
-      url: "https://github.com/klutchell/balena-pihole"
+      url: "https://github.com/Al3nMicL/balena-pihole/tree/local"
   logo:
     type: "blob.asset"
     data:
-      url: "https://raw.githubusercontent.com/klutchell/balena-pihole/main/logo.png"
+      url: "https://raw.githubusercontent.com/Al3nMicL/balena-pihole/main/logo.png"
 data:
   applicationConfigVariables:
     - BALENA_HOST_CONFIG_gpu_mem: 64
   applicationEnvironmentVariables:
     - WEBPASSWORD: 'balena'
-    - PIHOLE_DNS_: '1.1.1.1;1.0.0.1'
-    - FBCP_DISPLAY: ""
-  defaultDeviceType: "raspberrypi3"
+    - PIHOLE_DNS_: '208.67.222.222;208.67.220.220'
+    - FBCP_DISPLAY: "waveshare35b-ili9486"
+  defaultDeviceType: "raspberry-pi2"
   supportedDeviceTypes:
     - "raspberry-pi2"
     - "raspberrypi3"
